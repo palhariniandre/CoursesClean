@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: CourseCleanDB
+    restart: always
+    environment:
+      POSTGRES_DB: CourseClean
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5431:5432"
