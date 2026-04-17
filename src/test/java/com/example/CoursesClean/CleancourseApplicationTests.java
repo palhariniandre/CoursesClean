@@ -1,4 +1,4 @@
-package com.example.cleancourse;
+package com.example.CoursesClean;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

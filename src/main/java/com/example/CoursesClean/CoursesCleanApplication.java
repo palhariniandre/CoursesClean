@@ -1,13 +1,13 @@
-package com.example.cleancourse;
+package com.example.CoursesClean;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CleancourseApplication {
+public class CoursesCleanApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CleancourseApplication.class, args);
+		SpringApplication.run(CoursesCleanApplication.class, args);
 	}
 
 }
