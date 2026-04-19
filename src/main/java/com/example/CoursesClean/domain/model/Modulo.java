@@ -1,4 +1,4 @@
-package com.example.CoursesClean.core.entities;
+package com.example.CoursesClean.domain.model;
 
 public record Modulo(
         Long id,

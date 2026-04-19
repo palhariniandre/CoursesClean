@@ -1,6 +1,6 @@
-package com.example.CoursesClean.core.entities;
+package com.example.CoursesClean.domain.model;
 
-import com.example.CoursesClean.core.enums.TipoConteudo;
+import com.example.CoursesClean.domain.enums.TipoConteudo;
 
 public record Conteudo(
         Long id,

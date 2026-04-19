@@ -1,4 +1,4 @@
-package com.example.CoursesClean.core.enums;
+package com.example.CoursesClean.domain.enums;
 
 public enum TipoConteudo {
     PDF,
