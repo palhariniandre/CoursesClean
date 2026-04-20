@@ -4,5 +4,5 @@ import com.example.CoursesClean.domain.enums.TipoRole;
 
 public record Role(
     Long id,
-    TipoRole role
+    TipoRole tipoRole
 ) {}

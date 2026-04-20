@@ -6,6 +6,7 @@ public record User(
         Long id,
         String nome,
         Email email,
-        String senha
+        String senha,
+        Role role
 ) {
 }
