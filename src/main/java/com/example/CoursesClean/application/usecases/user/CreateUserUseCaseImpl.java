@@ -2,6 +2,7 @@ package com.example.CoursesClean.application.usecases.user;
 
 import com.example.CoursesClean.application.gateways.PasswordEncoder;
 import com.example.CoursesClean.application.gateways.UserGateway;
+import com.example.CoursesClean.application.exception.EmailJaCadastradoException;
 import com.example.CoursesClean.domain.enums.TipoRole;
 import com.example.CoursesClean.domain.model.Role;
 import com.example.CoursesClean.domain.model.User;
@@ -22,14 +23,14 @@ public class CreateUserUseCaseImpl implements CreateUserUseCase {
         Email email = new Email(command.email());
 
         if (userGateway.getByEmail(email).isPresent()) {
-            throw new RuntimeException("Email já está sendo utilizado"); // Ou sua Exception customizada
+            throw new EmailJaCadastradoException();
         }
 
         String senhaHasheada = passwordEncoder.encode(command.senha());
 
         Role userRole = command.role() != null ? command.role() : new Role(null, TipoRole.ALUNO);
 
-        User user = new User(null, command.nome(), email, senhaHasheada, command.role());
+        User user = new User(null, command.nome(), email, senhaHasheada, userRole);
 
         User createdUser = userGateway.create(user);
 
