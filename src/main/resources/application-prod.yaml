@@ -1,6 +1,6 @@
 spring:
   config:
-    import: optional:file:.env.prod_credencials
+    import: optional:file:.env.prod_credencials.proprieties.proprieties[.properties]
 
   datasource:
     url: ${DB_URL}
