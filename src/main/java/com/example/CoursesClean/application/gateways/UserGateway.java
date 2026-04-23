@@ -15,5 +15,7 @@ public interface UserGateway {
 
     Optional<User> getByEmail(Email email);
 
+    void delete(Long id);
+
 //    List<User> getAll();
 }
