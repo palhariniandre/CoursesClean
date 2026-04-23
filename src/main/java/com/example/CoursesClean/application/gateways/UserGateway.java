@@ -9,11 +9,11 @@ import java.util.Optional;
 public interface UserGateway {
     User create(User user);
 
-//    User update(User user);
-//
-//    Optional<User> getById(Long id);
-//
+    User update(User user);
+
+    Optional<User> getById(Long id);
+
     Optional<User> getByEmail(Email email);
-//
+
 //    List<User> getAll();
 }
