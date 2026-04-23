@@ -2,10 +2,13 @@ spring:
   application:
     name: CoursesClean
 
+  config:
+    import: optional:file:.env.dev_credencials
+
   datasource:
-    url: jdbc:postgresql://localhost:5431/CoursesClean
-    username: postgres
-    password: postgres
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:

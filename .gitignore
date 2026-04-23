@@ -1,0 +1,7 @@
+# Coloque isso no .gitignore na RAIZ do projeto
+.env
+.env.*
+*.prod_credencials
+target/
+*.iml
+.idea/
