@@ -1,8 +1,11 @@
 package com.example.CoursesClean.domain.model;
 
+import java.time.LocalDateTime;
+
 public record ProgressoUsuario(
-        Modulo modulo,
+        Curso curso,
         User usuario,
-        Double progresso
+        Double percentualConclusao,
+        LocalDateTime ultimoAcesso
 ) {
 }
