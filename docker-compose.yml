@@ -6,7 +6,7 @@ services:
     container_name: CoursesCleanDB
     restart: always
     env_file:
-      - .env.dev_credencials
+      - ..env.dev_credencials.proprieties
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
